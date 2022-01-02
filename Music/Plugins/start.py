@@ -14,6 +14,7 @@ from Music.MusicUtilities.database.sudo import get_sudoers
 from Music.MusicUtilities.helpers.inline import personal_markup
 from Music.MusicUtilities.helpers.thumbnails import down_thumb
 from Music.MusicUtilities.helpers.ytdl import ytdl_opts
+from Music.config import GROUP, CHANNEL
 from pyrogram import Client, filters
 from pyrogram.types import (
     InlineKeyboardButton,
@@ -25,11 +26,11 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="https://t.me/flicksrobotsupport"),
-            InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/SadRoomsInfo"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="https://t.me/{GROUP}"),
+            InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚", url="https://telegra.ph/ҡʏʏᵠˣʸᵒ-12-04"),
+            InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ​", url="https://telegra.ph/Skyzo-11-10"),
         ],
     ]
     return (
@@ -42,14 +43,15 @@ pstart_markup = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "➕ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ᴛᴏ ɢʀᴏᴜᴘ​ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                "Add Me To Your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton(text="✨ sᴜᴘᴘᴏʀᴛ​", url="https://t.me/flicksrobotsupport"),
-            InlineKeyboardButton("✨ ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/SadRoomsInfo"),
+            InlineKeyboardButton(text="Support", url="https://t.me/{GROUP}"),
+            InlineKeyboardButton("Updates", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ ​📚", url="https://telegra.ph/ҡʏʏᵠˣʸᵒ-12-04"),
+            InlineKeyboardButton("Cmd Music", url="https://telegra.ph/Skyzo-11-10"),
+            InlineKeyboardButton("Cmd Stream", url="https://telegra.ph/sᴋʏᴢᴏ-ᴇx-12-21"),
         ],
     ]
 )
@@ -63,11 +65,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"💡 Pemilik Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"🦸🏻‍♂️ **Pemilik Bot [{member.mention}] baru saja bergabung di grup ini.**"
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"💡 Admin Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"**🤖 Admin Bot [{member.mention}] baru saja bergabung di grup ini.**"
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
@@ -118,11 +120,11 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**✨ Selamat Datang {rpk}!
+**✨ Hello {rpk}!  How Are You?
 
-💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
+🤖 [{BOT_NAME}](tg://user?id=2129034376) is a bot that can be used to listen to songs in voice chat and can play videos in voice chat!
 
-💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
+🧰 To find out all the available command bots, you can press the two buttons below, namely Cmd Music and Cmd Stream**
 
 """,
             parse_mode="markdown",
@@ -168,7 +170,7 @@ async def play(_, message: Message):
             )
         if str(finxx) == "sud":
             sudoers = await get_sudoers()
-            text = "**📝 DAFTAR PENGGUNA SUDO**\n\n"
+            text = "**💻 DAFTAR PENGGUNA SUDO**\n\n"
             for count, user_id in enumerate(sudoers, 1):
                 try:
                     user = await app.get_users(user_id)
