@@ -4,13 +4,12 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     InputMediaPhoto,
     Message,
-from Music.config import GROUP
 )
 
 def play_markup(videoid, user_id):
     buttons= [
             [
-                InlineKeyboardButton(text="Support Chat", url=f"https://t.me/{GROUP}"),
+                InlineKeyboardButton(text="Support Chat", url=f"https://t.me/flicksrobotsupport"),
             ],
             [      
                 InlineKeyboardButton(text="Menu", callback_data=f'other {videoid}|{user_id}'),
