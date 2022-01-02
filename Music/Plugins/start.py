@@ -26,7 +26,7 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="https://t.me/{GROUP}"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{GROUP}"),
             InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{CHANNEL}"),
         ],
         [
@@ -46,7 +46,7 @@ pstart_markup = InlineKeyboardMarkup(
                 "Add Me To Your Group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton(text="Support", url="https://t.me/{GROUP}"),
+            InlineKeyboardButton("Support", url=f"https://t.me/{GROUP}"),
             InlineKeyboardButton("Updates", url=f"https://t.me/{CHANNEL}"),
         ],
         [
