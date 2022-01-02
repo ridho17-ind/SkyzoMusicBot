@@ -8,7 +8,6 @@
     <img src="https://img.shields.io/github/contributors/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Contributors">
     <img src="https://img.shields.io/github/repo-size/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Repository Size"> <br>
     <img src="https://img.shields.io/github/forks/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/stars/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Stars">
     <img src="https://img.shields.io/github/watchers/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Watchers">
     <img src="https://img.shields.io/github/commit-activity/w/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Commit Activity">
     <img src="https://img.shields.io/github/issues/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Issues">
