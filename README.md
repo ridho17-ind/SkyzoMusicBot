@@ -10,3 +10,7 @@
    Untuk mengubah semua command/atau module lainnya silahkan kalian fork Repository ini
   Terimakasih telah menggunakan Repository Skyzo Music Bot kami, Dan jangan lupa untuk memberikan stars
 ```
+### Deploy To Heroku 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ridho17-ind/skyzo-musicy)
+
