@@ -1,0 +1,76 @@
+{
+    "name": "Music",
+    "description": "Music allow you to stream music trought the telegram voice chat feature.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/ridho17-ind/SkyzoMusicBot",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "fill with your telegram id as the owner of the bot",
+            "required": true,
+            "value": "Isi Id Kamu"
+        },
+        "ASS_ID": {
+            "description": "fill with telegram id of account",
+            "required": true,
+            "value": "Isi Id Asisten Kamu"
+        },
+        "LOG_GROUP_ID": {
+            "description": "create a private group and get the group id, add your bot as admin to the group too",
+            "required": true,
+            "value": "Isi Id Log Group Kamu Dan Pastikan Bot Dan Asisten Jadi Admin Di Grup Log Kamu"
+        },
+        "API_ID": {
+            "description": "your Api ID from my.telegram.org/apps",
+            "required": true,
+            "value": "Isi Sendiri"
+        },
+        "API_HASH": {
+            "description": "your Api Hash from my.telegram.org/apps",
+            "required": true,
+            "value": "Isi Sendiri"
+        },
+        "SUDO_USERS": {
+            "description": "fill with the user id who can access all function in your bot (separate with space).",
+            "required": true,
+            "value": "Isi Id Kamu"
+        },
+        "DURATION_LIMIT": {
+            "description": "filled, don't change this !",
+            "required": true,
+            "value": "540000"
+        },
+        "BOT_TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": false,
+            "value": "Isi Sendiri"
+        },
+        "MONGO_DB_URI": {
+            "description": "fill with the mongodb url get from mongodb.cloud.com (don't use mine below !)",
+            "required": false,
+            "value": "Isi Mongo Kamu Sendiri"
+        },
+        "CHANNEL": {
+            "description": "Fill in using your channel username without @",
+            "required": true,
+            "value": "SadRoomsInfo"
+        },
+        "GROUP": {
+            "description": "Fill in using your channel username without the @",
+            "required": true,
+            "value": "FlicksRobotSupport"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
