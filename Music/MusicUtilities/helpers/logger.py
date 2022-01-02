@@ -24,6 +24,5 @@ async def LOG_CHAT(message, what):
 **││└─ Powered By: Music Bot**
 **│├┬ Chat Link:** {chatusername}
 **││└─ Query:** {message.text}"""
-**└─ The Music Bot**
     await ASS_ACC.send_message(LOG_GROUP_ID, f"{logger_text}", disable_web_page_preview=True)
     
