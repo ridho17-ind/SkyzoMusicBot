@@ -13,16 +13,13 @@ async def LOG_CHAT(message, what):
     mention = "["+user_name+"](tg://user?id="+str(user_id)+")" 
     logger_text = f"""
 **🤖 New {what}**
-**│**
-**│**
-**├┬ Chat:** {message.chat.title} [`{message.chat.id}`]
-**│└─ Powered By: Music Bot**
-**├┬ User:** {mention}
-**│└─ Powered By: Music Bot**
-**├┬ Username:** @{message.from_user.username}
-**│├┬ User ID:** `{message.from_user.id}`
-**││└─ Powered By: Music Bot**
-**│├┬ Chat Link:** {chatusername}
-**││└─ Query:** {message.text}"""
+****
+**📮 Chat:** {message.chat.title}
+**📮 Chat ID: `{message.chat.id}`
+**📮 Name:** {mention}
+**📮 Username:** @{message.from_user.username}
+**📮 User ID:** `{message.from_user.id}`
+**📮 Chat Link:** {chatusername}
+**📮 Query:** {message.text}"""
     await ASS_ACC.send_message(LOG_GROUP_ID, f"{logger_text}", disable_web_page_preview=True)
     
