@@ -68,15 +68,13 @@
 2. `API_HASH` : Assistant Account Telegram API_HASH, get it from my.telegram.org
 3. `BOT_TOKEN` : Your Telegram Bot Token, get it from @Botfather (Make sure Inline is turned On)
 4. `SESSION_STRING` : Pyrogram Session String of Assistant Account.
-5. `MUSIC_BOT_NAME` : A name for your Music bot.
 6. `MONGO_DB_URI` : MongoDB Database URL.
 7. `LOG_GROUP_ID` : Chat ID where bot will log everything. Use Group Chats Only.
 8. `DURATION_LIMIT` : Duration Limit for Music (Mins)
 9. `SUDO_USERS` : Sudo Users for Bot. (For multiple users seperate IDs with space)
 10. `OWNER_ID`: Owner ID of Bot
-11. `SUPPORT_GROUP` : Support Group Link (Leave blank if you don't have one)
-12. `SUPPORT_CHANNEL` : Support Channel Link ( Leave blank if you don't have one)
-13. `ASSISTANT_PREFIX` : Prefix for Assistant Commands
+11. `GROUP` : Support Group Link (Leave blank if you don't have one)
+12. `CHANNEL` : Support Channel Link ( Leave blank if you don't have one)
 
 
 <h2 align="center">
