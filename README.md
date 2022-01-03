@@ -1,17 +1,11 @@
 <h1 align= center><b>SKYZO MUSIC BOT</b></h1>
 <h3 align = center> Telegram Music Bot And Stream Feature New Version </h3>
 
-<p align="center">
-<a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
-<br>
-    <img src="https://img.shields.io/github/license/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="LICENSE">
-    <img src="https://img.shields.io/github/contributors/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/github/forks/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Forks">
-    <img src="https://img.shields.io/github/watchers/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Watchers">
-    <img src="https://img.shields.io/github/commit-activity/w/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Commit Activity">
-    <img src="https://img.shields.io/github/issues/ridho17-ind/SkyzoMusicBot?style=for-the-badge" alt="Issues">
-</p>
+<p align="center"><img src="https://telegra.ph/file/3b041f0e23708b4953667.jpg" alt="Coder GIF" width="500" alt="ridho17-ind Github" width="1000px" /></p>
+<p align="center"><img src="https://telegra.ph/file/9c7712434d81e3a85624a.jpg" alt="Coder GIF" width="500" alt="ridho17-ind Github" width="1000px" /></p>
+
+
+
 
 <h3 align="center">
     Ready to use method
