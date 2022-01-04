@@ -6,11 +6,11 @@
 
 
 <h3 align="center">
-    Ready to use method
+    Ready Use Metod
 </h3>
 
 <p align="center">
-    A Support Group and ready-to-use running instance of this bot can be found on Telegram <br>
+    A Support Group And Ready Running This Bot Music Telegram On Heroku!<br>
     <a href="https://t.me/FlicksMusicBot"> FlicksMusicBot </a> |
     <a href="https://t.me/FlicksRobotSupport"> FlicksSupport </a>
 </p>
@@ -27,7 +27,7 @@
 </p>
 
 <h2 align="center">
-   Stay Up-to-Date
+   Stay Up-To-Date
 </h2>
 
 <p align="center"><img src="https://media.giphy.com/media/SWoSkN6DxTszqIKEqv/giphy.gif" alt="Coder GIF" width="500" alt="ridho17-ind Github" width="1000px" /></p>
@@ -35,7 +35,7 @@
 
 
 <h2 align="center">
-   Other Deployment Methods
+   Deploy Skyzo Music Bot
 </h2>
 
 <p align="center">
