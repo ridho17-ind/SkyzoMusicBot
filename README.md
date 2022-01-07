@@ -35,7 +35,7 @@
 
 
 <h2 align="center">
-   Other Deployment Methods
+   Metode Deploy
 </h2>
 
 <p align="center">
