@@ -23,7 +23,8 @@
     <a href="https://www.python.org/downloads/release/python-390/"> Python3.9 </a> |
     <a href="https://docs.pyrogram.org/intro/setup#api-keys"> Telegram API Key </a> |
     <a href="https://t.me/botfather"> Telegram Bot Token </a> |
-    <a href="https://telegra.ph/How-To-get-Mongodb-URI-04-06"> MongoDB URI </a>
+    <a href="https://telegra.ph/How-To-get-Mongodb-URI-04-06"> MongoDB URI </a> |
+    <a href="https://telegram.dog/XTZ_HerokuBot?start=cmlkaG8xNy1pbmQvU2t5em9NdXNpY0JvdCBtYWlu"> Tutorial Deploy </a>
 </p>
 
 <h2 align="center">
