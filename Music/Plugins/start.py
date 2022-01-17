@@ -9,7 +9,6 @@ from Music import (
     app,
 )
 from Music.MusicUtilities.database.chats import is_served_chat
-from Music.MusicUtilities.helpers.skyzo import subcribe
 from Music.MusicUtilities.database.queue import remove_active_chat
 from Music.MusicUtilities.database.sudo import get_sudoers
 from Music.MusicUtilities.helpers.inline import personal_markup
@@ -113,7 +112,6 @@ For Help Click The Button Below.
 
 
 @Client.on_message(filters.private & filters.incoming & filters.command("start"))
-@subcribe
 async def play(_, message: Message):
     if len(message.command) == 1:
         user_id = message.from_user.id
