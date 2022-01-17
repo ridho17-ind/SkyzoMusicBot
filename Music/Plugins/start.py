@@ -9,6 +9,7 @@ from Music import (
     app,
 )
 from Music.MusicUtilities.database.chats import is_served_chat
+from Music.MusicUtilities.helpers.skyzo import subcribe
 from Music.MusicUtilities.database.queue import remove_active_chat
 from Music.MusicUtilities.database.sudo import get_sudoers
 from Music.MusicUtilities.helpers.inline import personal_markup
@@ -26,15 +27,15 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton(text="Support​", url=f"https://t.me/{GROUP}"),
+            InlineKeyboardButton(text="Updates", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ​", url="https://telegra.ph/Skyzo-11-10"),
+            InlineKeyboardButton("Command", url="https://telegra.ph/Skyzo-11-10"),
         ],
     ]
     return (
-        "🎛 **{BOT_NAME} Merupakan salah satu dari bot telegram yang bisa memutar musik di grup**",
+        "🎛 **{BOT_NAME} Is a bot that can play a song or video from the voice chats**",
         buttons,
     )
 
@@ -65,11 +66,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"🦸🏻‍♂️ **Pemilik Bot [{member.mention}] baru saja bergabung di grup ini.**"
+                    f"🦸🏻‍♂️ **Owners Bot [{member.mention}] Has Joined Your Chats.**"
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"**🤖 Admin Bot [{member.mention}] baru saja bergabung di grup ini.**"
+                    f"**🉐 Admin Bot [{member.mention}] Just Joined Your Chats.**"
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
@@ -77,9 +78,9 @@ async def welcome(_, message: Message):
                 out = start_pannel()
                 await message.reply_text(
                     f"""
-👋 ** Halo senang rasanya bisa bergabung di grup ini**
+👋 **Hi, thanks for adding me to the group**
 
-💡 **Jangan lupa untuk menjadikan saya sebagai admin di grup ini**
+🛵 **Don't forget to make me admin so music can run normally**
 """,
                     reply_markup=InlineKeyboardMarkup(out[1]),
                     disable_web_page_preview=True
@@ -100,10 +101,10 @@ async def start(_, message: Message):
     out = start_pannel()
     await message.reply_text(
         f"""
-Terima kasih telah memasukkan saya di {message.chat.title}.
-Musik itu hidup.
+Thanks For Adding Me To {message.chat.title}.
+Music Player And Video Player
 
-Untuk bantuan silahkan klik tombol dibawah.
+For Help Click The Button Below.
 """,
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
@@ -112,6 +113,7 @@ Untuk bantuan silahkan klik tombol dibawah.
 
 
 @Client.on_message(filters.private & filters.incoming & filters.command("start"))
+@subcribe
 async def play(_, message: Message):
     if len(message.command) == 1:
         user_id = message.from_user.id
@@ -120,11 +122,11 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**✨ Hello {rpk}!  How Are You?
+**🗣 Hello {rpk}! Ready Use Me?
 
-🤖 [{BOT_NAME}](tg://user?id=2129034376) is a bot that can be used to listen to songs in voice chat and can play videos in voice chat!
+🉐 [{BOT_NAME}](tg://user?id=2129034376) Is A Bot That Can Be Used To Listen To Songs In Voice Chat And Can Play Videos In Voice Chat!
 
-🧰 To find out all the available command bots, you can press the two buttons below, namely Cmd Music and Cmd Stream**
+🧰 To Find Out All The Available Command Bots, You Can Press The Two Buttons Below, Namely Cmd Music And Cmd Stream**
 
 """,
             parse_mode="markdown",
@@ -146,14 +148,14 @@ async def play(_, message: Message):
             searched_text = f"""
 🔍 **Video Track Information**
 
-❇️**Judul:** {x["title"]}
+❇️ **Title:** {x["title"]}
 
-⏳ **Durasi:** {round(x["duration"] / 60)} Mins
-👀 **Ditonton:** `{x["view_count"]}`
-👍 **Suka:** `{x["like_count"]}`
-👎 **Tidak suka:** `{x["dislike_count"]}`
-⭐️ **Peringkat Rata-rata:** {x["average_rating"]}
-🎥 **Nama channel:** {x["uploader"]}
+⏳ **Duration:** {round(x["duration"] / 60)} Mins
+👀 **Views:** `{x["view_count"]}`
+👍 **Like:** `{x["like_count"]}`
+👎 **Dislike:** `{x["dislike_count"]}`
+⭐️ **Rating:** {x["average_rating"]}
+📹 **Channel:** {x["uploader"]}
 📎 **Channel Link:** [Kunjungi Dari Sini]({x["channel_url"]})
 🔗 **Link:** [Link]({x["webpage_url"]})
 """
@@ -170,7 +172,7 @@ async def play(_, message: Message):
             )
         if str(finxx) == "sud":
             sudoers = await get_sudoers()
-            text = "**💻 DAFTAR PENGGUNA SUDO**\n\n"
+            text = "**💻 SUDO USERS FLICKS BOT**\n\n"
             for count, user_id in enumerate(sudoers, 1):
                 try:
                     user = await app.get_users(user_id)
