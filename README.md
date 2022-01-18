@@ -11,8 +11,8 @@
 
 <p align="center">
     A Support Group And Ready Running This Bot Music Telegram On Heroku!<br>
-    <a href="https://t.me/FlicksMusicBot"> FlicksMusicBot </a> |
-    <a href="https://t.me/FlicksRobotSupport"> FlicksSupport </a>
+    <a href="https://t.me/SKY MUSIC"> SKY MUSIC </a> |
+    <a href="https://t.me/SKYSUPPORT"> SKYSUPPORT </a>
 </p>
 
 <h2 align="center">
