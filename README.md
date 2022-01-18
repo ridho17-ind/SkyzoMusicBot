@@ -1,7 +1,7 @@
 <h1 align= center><b>SKY MUSIC</b></h1>
 <h3 align = center> Telegram Music Bot And Stream Feature New Version </h3>
 
-<p align="center"><img src="https://telegra.ph/file/3b041f0e23708b4953667.jpg" alt="Coder GIF" width="500" alt="ridho17-ind Github" width="1000px" /></p>
+<p align="center"><img src="https://telegra.ph/file/4813dafc34e5e1fbe1bcc.jpg" alt="Coder GIF" width="500" alt="ridho17-ind Github" width="1000px" /></p>
 
 
 
