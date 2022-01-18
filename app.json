@@ -1,8 +1,8 @@
 {
-    "name": "Skyzo Music",
+    "name": "SKY MUSIC",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/ridho17-ind/SkyzoMusicBot",
+    "repository": "https://github.com/SkyXProject/SKY MUSIC",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
@@ -57,12 +57,12 @@
         "CHANNEL": {
             "description": "Fill in using your channel username without @",
             "required": true,
-            "value": "SadRoomsInfo"
+            "value": "SADBOY"
         },
         "GROUP": {
             "description": "Fill in using your channel username without the @",
             "required": true,
-            "value": "FlicksRobotSupport"
+            "value": "SKYSUPPORT"
         }
     },
     "buildpacks": [
