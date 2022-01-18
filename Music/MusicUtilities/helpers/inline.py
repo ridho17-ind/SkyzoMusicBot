@@ -27,7 +27,7 @@ def others_markup(videoid, user_id):
                 InlineKeyboardButton(text="▷", callback_data=f'resumevc2'),
                 InlineKeyboardButton(text="▢", callback_data=f'pausevc2'),
                 InlineKeyboardButton(text="▷▷", callback_data=f'skipvc2'),
-                InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2'),
+                InlineKeyboardButton(text="♬", callback_data=f'stopvc2'),
             ],
             [
                 InlineKeyboardButton(text="+ Add Your List", callback_data=f'playlist {videoid}|{user_id}'),
@@ -59,7 +59,7 @@ play_keyboard = InlineKeyboardMarkup(
                         "▷▷", callback_data="skipvc"
                     ),
                     InlineKeyboardButton(
-                        "⏹️", callback_data="stopvc"
+                        "♬", callback_data="stopvc"
                     )
                 ],
                 [
@@ -78,7 +78,7 @@ def audio_markup(videoid, user_id):
                 InlineKeyboardButton(text="▷", callback_data=f'resumevc2'),
                 InlineKeyboardButton(text="▢", callback_data=f'pausevc2'),
                 InlineKeyboardButton(text="▷▷", callback_data=f'skipvc2'),
-                InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2')
+                InlineKeyboardButton(text="♬", callback_data=f'stopvc2')
             ],
             [
                 InlineKeyboardButton(text="🗑 Close Menu", callback_data="close2")              
@@ -100,9 +100,9 @@ def search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, dura
             ],
             [ 
                 
-                InlineKeyboardButton(text="⬅️", callback_data=f'popat 1|{query}|{user_id}'), 
+                InlineKeyboardButton(text="⇦", callback_data=f'popat 1|{query}|{user_id}'), 
                 InlineKeyboardButton(text="❌​", callback_data=f"ppcl2 smex|{user_id}") ,
-                InlineKeyboardButton(text="➡️", callback_data=f'popat 1|{query}|{user_id}')             
+                InlineKeyboardButton(text="⇨", callback_data=f'popat 1|{query}|{user_id}')             
             ],
         ]
     return buttons   
@@ -120,9 +120,9 @@ def search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, du
             ],
             [ 
                 
-                InlineKeyboardButton(text="⬅️", callback_data=f'popat 2|{query}|{user_id}'), 
+                InlineKeyboardButton(text="⇦", callback_data=f'popat 2|{query}|{user_id}'), 
                 InlineKeyboardButton(text="❌", callback_data=f"ppcl2 smex|{user_id}") ,
-                InlineKeyboardButton(text="➡️", callback_data=f'popat 2|{query}|{user_id}')             
+                InlineKeyboardButton(text="⇨", callback_data=f'popat 2|{query}|{user_id}')             
             ],
         ]
     return buttons 
