@@ -45,14 +45,7 @@
 <a href="https://telegram.dog/XTZ_HerokuBot?start=cmlkaG8xNy1pbmQvU2t5em9NdXNpY0JvdCBtYWlu"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  
 
 </p>
-
 <h2 align="center">
-   Generating Pyrogram Session
-</h2>
-
-<p align="center">
-<a href="https://replit.com/@AaravxD/VsBSession#main.py"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="245""/></a>
- </p>  
 
 
 <h2 align="center">
