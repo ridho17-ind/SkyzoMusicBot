@@ -14,12 +14,12 @@ async def LOG_CHAT(message, what):
     logger_text = f"""
 **🤖 New {what}**
 
-**📮 Chat:** {message.chat.title}
-**📮 Chat ID: `{message.chat.id}`
-**📮 Name:** {mention}
-**📮 Username:** @{message.from_user.username}
-**📮 User ID:** `{message.from_user.id}`
-**📮 Chat Link:** {chatusername}
-**📮 Query:** {message.text}"""
+**★ Chat:** {message.chat.title}
+**★ Chat ID: `{message.chat.id}`
+**★ Name:** {mention}
+**★ Username:** @{message.from_user.username}
+**★ User ID:** `{message.from_user.id}`
+**★ Chat Link:** {chatusername}
+**★ Query:** {message.text}"""
     await ASS_ACC.send_message(LOG_GROUP_ID, f"{logger_text}", disable_web_page_preview=True)
     
