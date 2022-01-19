@@ -27,7 +27,7 @@ def others_markup(videoid, user_id):
                 InlineKeyboardButton(text="▷", callback_data=f'resumevc2'),
                 InlineKeyboardButton(text="▢", callback_data=f'pausevc2'),
                 InlineKeyboardButton(text="▷▷", callback_data=f'skipvc2'),
-                InlineKeyboardButton(text="♬", callback_data=f'stopvc2'),
+                InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2'),
             ],
             [
                 InlineKeyboardButton(text="+ Add Your List", callback_data=f'playlist {videoid}|{user_id}'),
@@ -59,7 +59,7 @@ play_keyboard = InlineKeyboardMarkup(
                         "▷▷", callback_data="skipvc"
                     ),
                     InlineKeyboardButton(
-                        "♬", callback_data="stopvc"
+                        "⏹️", callback_data="stopvc"
                     )
                 ],
                 [
@@ -78,7 +78,7 @@ def audio_markup(videoid, user_id):
                 InlineKeyboardButton(text="▷", callback_data=f'resumevc2'),
                 InlineKeyboardButton(text="▢", callback_data=f'pausevc2'),
                 InlineKeyboardButton(text="▷▷", callback_data=f'skipvc2'),
-                InlineKeyboardButton(text="♬", callback_data=f'stopvc2')
+                InlineKeyboardButton(text="⏹️", callback_data=f'stopvc2')
             ],
             [
                 InlineKeyboardButton(text="🗑 Close Menu", callback_data="close2")              
