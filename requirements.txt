@@ -30,4 +30,3 @@ telegraph
 hachoir
 lyricsgenius
 httpx>=0.14.2
-heroku3
