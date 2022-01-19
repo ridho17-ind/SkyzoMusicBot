@@ -8,7 +8,7 @@ import uvloop
 from Music import config
 import importlib
 from pyrogram import Client as Bot
-from Music.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS, LOG_GROUP_ID, OWNER_ID
+from Music.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS, LOG_GROUP_ID, OWNER_ID, CHANNEL, GROUP
 from pyrogram import Client
 from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
@@ -25,6 +25,8 @@ MONGODB_CLI = MongoClient(MONGO_DB_URI)
 db = MONGODB_CLI.wbb
 SUDOERS = SUDO_USERS
 OWNER = OWNER_ID
+CHANNEL = CHANNEL
+GROUP = GROUP
 async def load_sudoers():
     global SUDOERS
     print("[INFO]: LOADING SUDO USERS")
