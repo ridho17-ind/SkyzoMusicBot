@@ -17,7 +17,7 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
 from sys import version as pyver
-from Music import dbb, app, BOT_USERNAME, BOT_ID, ASSID, ASSNAME, ASSUSERNAME, ASSMENTION, BOT_NAME
+from Music import dbb, app, BOT_USERNAME, BOT_ID, ASSID, ASSNAME, ASSUSERNAME, ASSMENTION, BOT_NAME, GROUP
 from Music.MusicUtilities.tgcallsrun import (music, convert, download, clear, get, is_empty, put, task_done, ASS_ACC)
 from Music.MusicUtilities.database.queue import (get_active_chats, is_active_chat, add_active_chat, remove_active_chat, music_on, is_music_playing, music_off)
 from Music.MusicUtilities.database.onoff import (is_on_off, add_on, add_off)
@@ -256,7 +256,7 @@ async def play(_, message: Message):
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
-            caption=("**Usage:** /play [Music Name Or Youtube Link Or Reply to Audio]\n\nIf You Want To Play Playlists! Select The One From Below.\n\n**More Info In [Group](t.me/flicksrobotsupport)**"),    
+            caption=("**Usage:** /play [Music Name Or Youtube Link Or Reply to Audio]\n\nIf You Want To Play Playlists! Select The One From Below.\n\n**More Info In [Group](t.me/{GROUP})**"),    
             reply_markup=InlineKeyboardMarkup(buttons),
             ) 
             return
