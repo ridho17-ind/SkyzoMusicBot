@@ -1,47 +1,23 @@
 print("[INFO]: INITIALIZING")
+from pyrogram import Client
 import asyncio
-import importlib
+from Music.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS
+from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 import time
-
 import uvloop
+from Music import config
+import importlib
+from pyrogram import Client as Bot
+from Music.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS, LOG_GROUP_ID, OWNER_ID, MUST_JOIN
+from pyrogram import Client
 from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
-from motor.motor_asyncio import AsyncIOMotorClient as Bot
-from Music.config import MONGO_DB_URI as mango
-from pyrogram import Client
-from pyrogram import Client as Bot
-
-from Music.converter.cli import app, userbot
-from Music import config
-from Music.config import (
-    API_HASH,
-    API_ID,
-    BOT_TOKEN,
-    LOG_GROUP_ID,
-    MONGO_DB_URI,
-    OWNER_ID,
-    SUDO_USERS,
-)
-
+import time
 
 def initialize():
     global dbb
     dbb = {}
-
-### Mongo DB
-MONGODB_CLI = Bot(mango)
-db = MONGODB_CLI
-pymongodb = ""
-
-### Boot Time
-boottime = time.time()
-
-### Clients
-app = app
-userbot = userbot
-aiohttpsession = ClientSession()
-
-
+    
 initialize()
 
 print("[INFO]: INITIALIZING DATABASE")
@@ -49,8 +25,7 @@ MONGODB_CLI = MongoClient(MONGO_DB_URI)
 db = MONGODB_CLI.wbb
 SUDOERS = SUDO_USERS
 OWNER = OWNER_ID
-
-
+MUST_JOIN = MUST_JOIN
 async def load_sudoers():
     global SUDOERS
     print("[INFO]: LOADING SUDO USERS")
@@ -65,12 +40,11 @@ async def load_sudoers():
             )
     SUDOERS = (SUDOERS + sudoers) if sudoers else SUDOERS
     print("[INFO]: LOADED SUDO USERS")
-
-
 loop = asyncio.get_event_loop()
 loop.run_until_complete(load_sudoers())
 Music_START_TIME = time.time()
 loop = asyncio.get_event_loop()
+
 
 
 BOT_ID = 0
@@ -82,7 +56,7 @@ ASSUSERNAME = ""
 ASSMENTION = ""
 print("[INFO]: INITIALIZING BOT CLIENT")
 app = Client(
-    "MusicBot",
+    'MusicBot',
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
@@ -90,7 +64,6 @@ app = Client(
 aiohttpsession = ClientSession()
 
 client = Client(config.SESSION_NAME, config.API_ID, config.API_HASH)
-
 
 def all_info(app, client):
     global BOT_ID, BOT_NAME, BOT_USERNAME
@@ -112,14 +85,8 @@ def all_info(app, client):
     ASSUSERNAME = getme1.username
     ASSMENTION = getme1.mention
     
-def init_db():
-    global db_mem
-    db_mem = {}
 
-
-init_db()
-
-
+    
 print("[INFO]: STARTING BOT CLIENT")
 app.start()
 print("[INFO]: STARTING ASSISTANT CLIENT")
