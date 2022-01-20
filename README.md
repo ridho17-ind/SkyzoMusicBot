@@ -79,7 +79,7 @@
 
 
 
-**[Kenkan](https://github.com/kenkansaja) | [Skyzo](https://github.com/ridho17-ind) Dua Orang Saja**
+**[Kenkan](https://github.com/kenkansaja) | [Skyzo](https://github.com/ridho17-ind)**
 
 
 
