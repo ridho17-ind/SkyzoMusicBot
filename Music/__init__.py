@@ -1,7 +1,7 @@
 print("[INFO]: INITIALIZING")
 from pyrogram import Client
 import asyncio
-from Music.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS
+from Music.config import API_ID, API_HASH, BOT_TOKEN, MONGO_DB_URI, SUDO_USERS, UPSTREAM_BRANCH, UPSTREAM_REPO
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 import time
 import uvloop
