@@ -17,10 +17,10 @@ from pyrogram.types import Message
 
 from Music.config import (HEROKU_API_KEY, HEROKU_APP_NAME, UPSTREAM_BRANCH,
                     UPSTREAM_REPO,LOG_GROUP_ID)
-from Music import SUDOERS, app
-from Yukki.Database import get_active_chats, remove_active_chat, remove_active_video_chat
+from Music.config import SUDOERS, app
 from Music.MusicUtilities.helpers.heroku import is_heroku, user_input
-from Yukki.Utilities.paste import isPreviewUp, paste_queue
+from Music.MusicUtilities.helpers.paste import isPreviewUp  
+from Music.MusicUtilities.helpers.paste import paste as paste_queue
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -345,93 +345,3 @@ async def update_(client, message):
     return
 
 
-@app.on_message(filters.command("restart") & filters.user(SUDOERS))
-async def restart_(_, message):
-    response = await message.reply_text("Restarting....")
-    if await is_heroku():
-        if HEROKU_API_KEY == "" and HEROKU_APP_NAME == "":
-            return await message.reply_text(
-                "<b>HEROKU APP DETECTED!</b>\n\nIn order to restart your app, you need to set up the `HEROKU_API_KEY` and `HEROKU_APP_NAME` vars respectively!"
-            )
-        elif HEROKU_API_KEY == "" or HEROKU_APP_NAME == "":
-            return await message.reply_text(
-                "<b>HEROKU APP DETECTED!</b>\n\n<b>Make sure to add both</b> `HEROKU_API_KEY` **and** `HEROKU_APP_NAME` <b>vars correctly in order to be able to restart remotely!</b>"
-            )
-        try:
-            served_chats = []
-            try:
-                chats = await get_active_chats()
-                for chat in chats:
-                    served_chats.append(int(chat["chat_id"]))
-            except Exception as e:
-                pass
-            for x in served_chats:
-                try:
-                    await app.send_message(
-                        x,
-                        f"{MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
-                    )
-                    await remove_active_chat(x)
-                    await remove_active_video_chat(x)
-                except Exception:
-                    pass
-            heroku3.from_key(HEROKU_API_KEY).apps()[HEROKU_APP_NAME].restart()
-            await response.edit(
-                "**Heroku Restart**\n\nReboot has been initiated successfully! Wait for 1 - 2 minutes until the bot restarts."
-            )
-            return
-        except Exception as err:
-            await response.edit(
-                "Something went wrong while initiating reboot! Please try again later or check logs for more info."
-            )
-            return
-    else:
-        served_chats = []
-        try:
-            chats = await get_active_chats()
-            for chat in chats:
-                served_chats.append(int(chat["chat_id"]))
-        except Exception as e:
-            pass
-        for x in served_chats:
-            try:
-                await app.send_message(
-                    x,
-                    f"{MUSIC_BOT_NAME} has just restarted herself. Sorry for the issues.\n\nStart playing after 10-15 seconds again.",
-                )
-                await remove_active_chat(x)
-                await remove_active_video_chat(x)
-            except Exception:
-                pass
-        A = "downloads"
-        B = "raw_files"
-        C = "cache"
-        D = "search"
-        try:
-            shutil.rmtree(A)
-            shutil.rmtree(B)
-            shutil.rmtree(C)
-            shutil.rmtree(D)
-        except:
-            pass
-        await asyncio.sleep(2)
-        try:
-            os.mkdir(A)
-        except:
-            pass
-        try:
-            os.mkdir(B)
-        except:
-            pass
-        try:
-            os.mkdir(C)
-        except:
-            pass
-        try:
-            os.mkdir(D)
-        except:
-            pass
-        await response.edit(
-            "Reboot has been initiated successfully! Wait for 1 - 2 minutes until the bot restarts."
-        )
-        os.system(f"kill -9 {os.getpid()} && bash start")
