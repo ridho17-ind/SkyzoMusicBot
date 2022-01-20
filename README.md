@@ -74,6 +74,16 @@
 
 
 <h2 align="center">
+   CONTRIBUTORS
+</h2>
+
+
+
+**[Kenkan](https://github.com/jokokendi) | [Skyzo](https://github.com/ridho17-ind)**
+
+
+
+<h2 align="center">
    CREDIT
 </h2>
 
