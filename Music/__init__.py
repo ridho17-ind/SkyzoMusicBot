@@ -18,6 +18,7 @@ from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 import time
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
+from Music.MusicUtilities.helpers.tasks import install_requirements
 
 console = Console()
 
