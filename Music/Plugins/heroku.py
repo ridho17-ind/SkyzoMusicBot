@@ -17,7 +17,7 @@ from pyrogram.types import Message
 
 from Music.config import (HEROKU_API_KEY, HEROKU_APP_NAME, UPSTREAM_BRANCH,
                     UPSTREAM_REPO,LOG_GROUP_ID)
-from Music.config import SUDO_USERS, app
+from Music import SUDOERS, app
 from Music.MusicUtilities.helpers.heroku import is_heroku, user_input
 from Music.MusicUtilities.helpers.paste import isPreviewUp  
 from Music.MusicUtilities.helpers.paste import paste as paste_queue
