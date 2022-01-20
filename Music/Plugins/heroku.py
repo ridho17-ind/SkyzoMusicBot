@@ -1,3 +1,6 @@
+# Skyxo Music bot
+# Don't remove credits ⚠️
+
 import asyncio
 import math
 import os
