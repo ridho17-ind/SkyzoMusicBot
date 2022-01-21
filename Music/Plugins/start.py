@@ -14,7 +14,7 @@ from Music.MusicUtilities.database.sudo import get_sudoers
 from Music.MusicUtilities.helpers.inline import personal_markup
 from Music.MusicUtilities.helpers.thumbnails import down_thumb
 from Music.MusicUtilities.helpers.ytdl import ytdl_opts
-from Music.config import GROUP, CHANNEL
+from Music.config import GROUP, CHANNEL, BOT_IMG
 from pyrogram import Client, filters
 from pyrogram.types import (
     InlineKeyboardButton,
