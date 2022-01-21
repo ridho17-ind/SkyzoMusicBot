@@ -1,5 +1,5 @@
 # Skyzo Music Bot
-# By Kenkan 
+# By Kenkan And Skyzo
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Music.config import LOG_GROUP_ID
@@ -25,7 +25,7 @@ __**New {what}**__
 **Query:** {message.text}"""
     await app.send_message(LOG_GROUP_ID, 
                text = f"{logger_text}", 
-               keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴠɪᴇᴡs​​", url=f"t.me/c/{message.chat.id}")]]),
+               reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴠɪᴇᴡs​​", url=f"t.me/c/{message.chat.id}")]]),
                disable_web_page_preview=True,
           )
     
