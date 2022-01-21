@@ -121,7 +121,7 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**[🗣](https://telegra.ph/file/148b4104a5b7106d3d282.jpg) Hello {rpk}! Ready Use Me?
+**[🗣]({BOT_IMG}) Hello {rpk}! Ready Use Me?
 
 🉐 [{BOT_NAME}](tg://user?id=2129034376) Is A Bot That Can Be Used To Listen To Songs In Voice Chat And Can Play Videos In Voice Chat!
 
