@@ -25,7 +25,7 @@ __**New {what}**__
 **Query:** {message.text}"""
     await app.send_message(LOG_GROUP_ID, 
                text = f"{logger_text}", 
-               reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴠɪᴇᴡs​​", url=f"t.me/{chatusername}")]]),
+               reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴠɪᴇᴡs​​", url=f"{message.from_user.first_name}")]]),
                disable_web_page_preview=True,
           )
     
