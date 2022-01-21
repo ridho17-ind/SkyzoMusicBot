@@ -1,3 +1,6 @@
+# Skyzo Music Bot
+# By Kenkan 
+
 from Music.config import LOG_GROUP_ID
 from Music import app
 
@@ -21,7 +24,7 @@ __**New {what}**__
 **Query:** {message.text}"""
     await app.send_message(LOG_GROUP_ID, 
                text = f"{logger_text}", 
-               keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"t.me/c/{message.chat.id}")]]),
+               keyboard = InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴠɪᴇᴡs​​", url=f"t.me/c/{message.chat.id}")]]),
                disable_web_page_preview=True,
           )
     
