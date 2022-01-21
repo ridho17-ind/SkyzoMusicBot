@@ -10,6 +10,7 @@ from pyrogram.types import Message
 from time import time
 from datetime import datetime
 from Music import app
+from pytgcalls import __version__ as pytover
 
 from Music.config import (
     BOT_IMG,
@@ -55,6 +56,7 @@ async def alive(client, message):
 ㊙️ **Bot Info : Online**
 ㊙️ **Uptime : `{uptime}`**
 ㊙️ **Pyrogram Version : `{pyrover}`**
+㊙️ **PyTgCalls Version: `{pytover.__version__}`**
 ㊙️ **Using New Version**
 **Thanks For Using Me 🚀**""",
         reply_markup=InlineKeyboardMarkup(
