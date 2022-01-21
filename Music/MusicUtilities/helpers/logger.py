@@ -1,6 +1,7 @@
 
 from Music.config import LOG_GROUP_ID
 from Music import app
+)
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 async def LOG_CHAT(message, what):
