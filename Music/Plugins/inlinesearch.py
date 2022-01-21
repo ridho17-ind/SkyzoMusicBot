@@ -8,7 +8,7 @@ from pyrogram.types import (
 )
 from youtubesearchpython import VideosSearch
 from Music import app
-from pyrogram import Cilent
+from pyrogram import Client
 
 @app.on_inline_query()
 async def inline(client: Client, query: InlineQuery):
