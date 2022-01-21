@@ -68,6 +68,6 @@ async def blacklisted_chats_func(_, message: Message):
         count += 1
         text += f"**{count}. {title}** [`{served_chat}`]\n"
     if not text:
-        await message.reply_text("No Allowed Chats")  
+        await message.reply_text("🉐 No Allowed Chats")  
     else:
         await message.reply_text(text)
