@@ -1,7 +1,7 @@
 # Skyzo Music Bot
 # By Kenkan 
 
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup,
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from Music.config import LOG_GROUP_ID
 from Music import app
 
