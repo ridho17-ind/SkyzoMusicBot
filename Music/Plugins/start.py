@@ -50,9 +50,9 @@ pstart_markup = InlineKeyboardMarkup(
             InlineKeyboardButton("Updates", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton("Cmd Music", url="https://telegra.ph/Skyzo-11-10"),
-            InlineKeyboardButton("Cmd Dev", url="https://telegra.ph/壊Skyzo-01-21"),
-            InlineKeyboardButton("Cmd Stream", url="https://telegra.ph/sᴋʏᴢᴏ-ᴇx-12-21"),
+            InlineKeyboardButton("Cd Music", url="https://telegra.ph/Skyzo-11-10"),
+            InlineKeyboardButton("Cd Dev", url="https://telegra.ph/壊Skyzo-01-21"),
+            InlineKeyboardButton("Cd Stream", url="https://telegra.ph/sᴋʏᴢᴏ-ᴇx-12-21"),
         ],
     ]
 )
@@ -121,7 +121,7 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**🗣 Hello {rpk}! Ready Use Me?
+**[🗣](https://telegra.ph/file/148b4104a5b7106d3d282.jpg) Hello {rpk}! Ready Use Me?
 
 🉐 [{BOT_NAME}](tg://user?id=2129034376) Is A Bot That Can Be Used To Listen To Songs In Voice Chat And Can Play Videos In Voice Chat!
 
