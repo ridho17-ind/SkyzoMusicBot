@@ -1,4 +1,5 @@
 # Skyzo Music Bot
+# jokokendi or kenkansaja
 # Don't remove credits ⚠️
 
 import asyncio
