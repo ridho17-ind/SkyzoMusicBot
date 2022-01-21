@@ -1,7 +1,7 @@
 
 from Music.config import LOG_GROUP_ID
-from Music.MusicUtilities.tgcallsrun import ASS_ACC
-
+from Music import app
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 async def LOG_CHAT(message, what):
     if message.chat.username:
@@ -21,5 +21,14 @@ async def LOG_CHAT(message, what):
 **📮 User ID:** `{message.from_user.id}`
 **📮 Chat Link:** {chatusername}
 **📮 Query:** {message.text}"""
-    await ASS_ACC.send_message(LOG_GROUP_ID, f"{logger_text}", disable_web_page_preview=True)
-    
+    await app.send_message(LOG_GROUP_ID, f"{logger_text}", disable_web_page_preview=True)
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Support", url=f"message.from_user.first_name"
+                    )
+                ]
+            ]
+        )
+    )
