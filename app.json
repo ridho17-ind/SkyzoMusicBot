@@ -14,6 +14,21 @@
             "required": true,
             "value": "Isi Id Kamu"
         },
+        "OWNER_NAME": {
+            "description": "Your name",
+            "value": "",
+            "required": true
+        },
+        "OWNER_USERMAME": {
+        "description": "Your username whitout @.",
+        "value": "",
+        "required": true
+        },
+        "BOT_IMG": {
+        "description": "Photo for your bot",
+        "value": "https://telegra.ph/file/d3f62131358c475dda9ae.jpg",
+        "required": true
+        },
         "ASS_ID": {
             "description": "fill with telegram id of account",
             "required": true,
