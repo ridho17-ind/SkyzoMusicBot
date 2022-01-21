@@ -75,6 +75,10 @@
 14. `HEROKU_API_KEY`: Heroku Api Key
 15. `UPSTREAM_BRANCH`: Branch Repository Original main
 16. `UPSTREAM_REPO`: Repository Link
+17. `OWNER_NAME`: Owner Name Of Bot
+18. `OWNER_USERNAME`: Owner Username Bot
+19. `BOT_IMG`: Usage Telegraph Link Img
+
 
 
 <h2 align="center">
