@@ -78,9 +78,9 @@ async def welcome(_, message: Message):
                 out = start_pannel()
                 await message.reply_text(
                     f"""
-👋 **Hi, thanks for adding me to the group**
+👋 **Hi, Thanks For Adding Me To The Group**
 
-🛵 **Don't forget to make me admin so music can run normally**
+🛵 **Don't Forget To Make Me Admin So Music Can Run Normally**
 """,
                     reply_markup=InlineKeyboardMarkup(out[1]),
                     disable_web_page_preview=True
@@ -101,10 +101,8 @@ async def start(_, message: Message):
     out = start_pannel()
     await message.reply_text(
         f"""
-Thanks For Adding Me To {message.chat.title}.
-Music Player And Video Player
-
-For Help Click The Button Below.
+**[🚀]({BOT_IMG}) Thanks For Adding Me To {message.chat.title}.**
+**㊙️ {BOT_NAME} Is Music Player And Video Player Bot**
 """,
         reply_markup=InlineKeyboardMarkup(out[1]),
         disable_web_page_preview=True
@@ -125,7 +123,7 @@ async def play(_, message: Message):
 
 🉐 [{BOT_NAME}](tg://user?id=2129034376) Is A Bot That Can Be Used To Listen To Songs In Voice Chat And Can Play Videos In Voice Chat!
 
-🧰 To Find Out All The Available Command Bots, You Can Press The Two Buttons Below, Namely Cmd Music And Cmd Stream**
+🧰 To Find Out All The Available Command Bots, You Can Press The Two Buttons Below, Namely Cd Music, Cd Dev And Cd Stream**
 
 """,
             parse_mode="markdown",
