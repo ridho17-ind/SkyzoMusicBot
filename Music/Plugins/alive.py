@@ -12,11 +12,9 @@ from datetime import datetime
 from Music import app
 
 from Music.config import (
-    OWNER_NAME as saya,
     BOT_IMG,
     GROUP,
     CHANNEL,
-    OWNER_USERNAME,
 )
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -52,13 +50,13 @@ async def alive(client, message):
     await client.send_photo(message.chat.id,
         photo=f"{BOT_IMG}",
         caption=f"""**Holla {message.from_user.mention()}.**
-⚡ **I'm Working Properly**
-⚡ **Bot : 6.0 LATEST**
-⚡ **My Master : [{saya}](t.me/{OWNER_USERNAME})**
-⚡ **Uptime : `{uptime}`**
-⚡ **Pyrogram Version : `{pyrover}`**
-⚡ **Using New Version**
-**Thanks For Using Me ❤️**""",
+㊙️ **I'm Working Properly**
+㊙️ **Bot : Latest**
+㊙️ **Bot Info : Online**
+㊙️ **Uptime : `{uptime}`**
+㊙️ **Pyrogram Version : `{pyrover}`**
+㊙️ **Using New Version**
+**Thanks For Using Me 🚀**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
