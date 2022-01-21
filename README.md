@@ -68,9 +68,13 @@
 7. `LOG_GROUP_ID` : Chat ID where bot will log everything. Use Group Chats Only.
 8. `DURATION_LIMIT` : Duration Limit for Music (Mins)
 9. `SUDO_USERS` : Sudo Users for Bot. (For multiple users seperate IDs with space)
-10. `OWNER_ID`: Owner ID of Bot
+10. `OWNER_ID`: Owner ID Of Bot
 11. `GROUP` : Support Group Link (Leave blank if you don't have one)
 12. `CHANNEL` : Support Channel Link ( Leave blank if you don't have one)
+13. `HEROKU_APP_NAME`: Heroku App Name
+14. `HEROKU_API_KEY`: Heroku Api Key
+15. `UPSTREAM_BRANCH`: Branch Repository Original main
+16. `UPSTREAM_REPO`: Repository Link
 
 
 <h2 align="center">
