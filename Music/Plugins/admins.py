@@ -77,7 +77,7 @@ async def pause_cmd(_, message):
         return await message.reply_text("I dont think if something's playing on voice chat")   
     await music_off(chat_id)
     await music.pytgcalls.pause_stream(chat_id)
-    await message.reply_text(f"**🎧 Voicechat Paused By {checking}!**")
+    await message.reply_text(f"**🚀 Voicechat Paused By {checking}!**")
     
 @app.on_message(filters.command("resume"))
 async def stop_cmd(_, message): 
@@ -96,7 +96,7 @@ async def stop_cmd(_, message):
     else:
         await music_on(chat_id)
         await music.pytgcalls.resume_stream(chat_id)
-        await message.reply_text(f"**🎧 Voicechat Resumed By {checking}!**")
+        await message.reply_text(f"**🚀 Voicechat Resumed By {checking}!**")
 
 @app.on_message(filters.command(["stop", "end"]))
 async def stop_cmd(_, message): 
@@ -115,14 +115,14 @@ async def stop_cmd(_, message):
             pass                        
         await remove_active_chat(chat_id)
         await music.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text(f"**🎧 Voicechat End/Stopped By {checking}!**") 
+        await message.reply_text(f"**🚀 Voicechat End/Stopped By {checking}!**") 
     else:
-        return await message.reply_text("**🤷🏻‍♂ I Dont Think If Something Playing On Voice Chat**")
+        return await message.reply_text("**🤷🏻‍♂ I Dont Think If Something Playing On Voice Chat Bro**")
     
 @app.on_message(filters.command("skip"))
 async def stop_cmd(_, message): 
     if message.sender_chat:
-        return await message.reply_text("You're an __Anonymous Admin__!\nRevert back to User Account.") 
+        return await message.reply_text("⛔ You're An __Anonymous Admin__!\n⛔ Revert Back To User Account.") 
     permission = "can_manage_voice_chats"
     m = await adminsOnly(permission, message)
     if m == 1:
@@ -136,7 +136,7 @@ async def stop_cmd(_, message):
         task_done(chat_id)
         if is_empty(chat_id):
             await remove_active_chat(chat_id)
-            await message.reply_text("No more music in __Queue__ \n\nLeaving Voice Chat")
+            await message.reply_text("⛔ **No More Music In** __Queue__ \n\n**Leaving Voice Chat**")
             await music.pytgcalls.leave_group_call(chat_id)
             return  
         else:
@@ -217,7 +217,7 @@ async def stop_cmd(_, message):
                 await message.reply_photo(
                 photo= thumb,
                 reply_markup=InlineKeyboardMarkup(buttons),    
-                caption=(f"<b>__Skipped Voice Chat__</b>\n\n🎥 <b>__Started Playing:__ </b>[{title[:25]}]({url}) \n🧼 <b>__Duration:__</b> {duration} Mins\n👩‍💻 **__Requested By:__** {semx.mention}")
+                caption=(f"<b>__Skipped Voice Chat__</b>\n\n🔈 <b>__Started Playing:__ </b>[{title[:25]}]({url}) \n⏰ <b>__Duration:__</b> {duration} Mins\n👩‍💻 **__Requested By:__** {semx.mention}")
             )   
                 os.remove(thumb)
             else:      
@@ -247,6 +247,6 @@ async def stop_cmd(_, message):
                 await message.reply_photo(
                 photo=f"downloads/{_chat_}final.png",
                 reply_markup=InlineKeyboardMarkup(buttons),
-                caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__</b> {title} \n⏳<b>__Duration:__</b> {duration} \n👤<b>__Requested by:__ </b> {username}",
+                caption=f"<b>__Skipped Voice Chat__</b>\n\n🔈 <b>__Started Playing:__</b> {title} \n⏰ <b>__Duration:__</b> {duration} \n🤡 <b>__Requested By:__ </b> {username}",
                 )
                 return
