@@ -3,7 +3,14 @@
 
 <p align="center"><img src="https://telegra.ph/file/3b041f0e23708b4953667.jpg" alt="Coder GIF" width="500" alt="ridho17-ind Github" width="1000px" /></p>
 
-
+<p align="center">
+    <a href="https://ridho17-ind.github.io">
+        <img
+            src="https://readme-typing-svg.herokuapp.com?size=15&width=280&lines=Thank+For+Using+Skyzo+Music+Bot"
+            alt="Skijo"
+        />
+    </a>
+</p>
 
 <h3 align="center">
     Ready Use Metod
