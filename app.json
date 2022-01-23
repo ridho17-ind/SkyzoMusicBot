@@ -5,46 +5,46 @@
     "repository": "https://github.com/ridho17-ind/SkyzoMusicBot",
     "stack": "container",
     "env": {
-        "SESSION_NAME": {
+         "SESSION_NAME": {
             "description": "fill with the pyrogram session string from account",
             "required": true
-        },
-        "OWNER_ID": {
+         },
+         "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
             "value": "Isi Id Kamu"
-        },
-        "BOT_IMG": {
+         },
+         "BOT_IMG": {
             "description": "Photo for your bot",
             "value": "https://telegra.ph/file/d3f62131358c475dda9ae.jpg",
             "required": true
-        },
-        "ASS_ID": {
+         },
+         "ASS_ID": {
             "description": "fill with telegram id of account",
             "required": true,
             "value": "Isi Id Asisten Kamu"
-        },
-        "LOG_GROUP_ID": {
+         },
+         "LOG_GROUP_ID": {
             "description": "create a private group and get the group id, add your bot as admin to the group too",
             "required": true,
             "value": "Isi Id Log Group Kamu Dan Pastikan Bot Dan Asisten Jadi Admin Di Grup Log Kamu"
-        },
-        "API_ID": {
+         },
+         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
             "required": true,
             "value": "Isi Sendiri"
-        },
-        "API_HASH": {
+         },
+         "API_HASH": {
             "description": "your Api Hash from my.telegram.org/apps",
             "required": true,
             "value": "Isi Sendiri"
-        },
-       "HEROKU_API_KEY": {
+         },
+        "HEROKU_API_KEY": {
             "description": "Your Heroku account's API key",
             "value": "",
             "required": false
         },
-       "HEROKU_APP_NAME": {
+        "HEROKU_APP_NAME": {
            "description": "Your heroku app/bot's name",
            "value": "",
            "required": false
@@ -61,7 +61,7 @@
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
-            "required": false,
+            "required": true,
             "value": "Isi Sendiri"
         },
         "MONGO_DB_URI": {
