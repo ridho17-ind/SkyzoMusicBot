@@ -13,7 +13,7 @@
 </p>
 
 <h3 align="center">
-    Ready Use Metod
+    Gunakan Metode Ini Jika Anda Deploy Dengan Heroku
 </h3>
 
 <p align="center">
