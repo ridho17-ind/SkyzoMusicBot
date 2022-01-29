@@ -51,8 +51,8 @@ async def load_start():
         except Exception as e:
             print("Error came while clearing db")
             pass     
-    await app.send_message(LOG_GROUP_ID, "**[🤖](https://t.me/jdididndndjsj/38283) The Music Bot Started Master...**")
-    await client.send_message(LOG_GROUP_ID, "**[🦸🏻‍♂️](https://t.me/jdididndndjsj/38284) The Music Assistant Started Master...**")
+    await app.send_message(LOG_GROUP_ID, "**[🤖](https://t.me/flicksrobotsupport/14994) The Music Bot Started Master...**")
+    await client.send_message(LOG_GROUP_ID, "**[🦸🏻‍♂️](https://t.me/flicksrobotsupport/14995) The Music Assistant Started Master...**")
     print("[INFO]: STARTED")
     
    
