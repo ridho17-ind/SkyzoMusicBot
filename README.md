@@ -22,7 +22,22 @@
                            Dari Link Di Bawah Ini
     https://dashboard.heroku.com/new?template=https://github.com/ridho17-ind/SkyzoMusicBot
                            Ubah Seperti Link Di Bawah Ini
-    https://dashboard.heroku.com/new?template=https://github.com/nama-github-kamu/SkyzoMusicBot
+    https://dashboard.heroku.com/new?template=https://github.com/username-github-kamu/SkyzoMusicBot
+</p>
+
+<h2 align="center">
+   Cara Ubah app.json
+</h2>
+
+    Setelah kalian ubah link Deploy seperti diatas
+    Sekarang kalian harus mengubah app.json
+    Yang harus diubah di app.json adalah Link Repository dari namanya ridho17-ind ke nama github kamu
+                       Contoh
+    https://github.com/ridho17-ind/SkyzoMusicBot
+    Lalu Kalian Ubah Ke
+    https://github.com/username-github-kalian/SkyzoMusicBot
+
+
 </p>
 
 <h2 align="center">
