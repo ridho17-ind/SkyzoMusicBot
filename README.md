@@ -22,7 +22,7 @@
                            Dari Link Di Bawah Ini
     https://dashboard.heroku.com/new?template=https://github.com/ridho17-ind/SkyzoMusicBot
                            Ubah Seperti Link Di Bawah Ini
-    https://dashboard.heroku.com/new?template=https://github.com/username-github-kamu/SkyzoMusicBot
+    https://dashboard.heroku.com/new?template=https://github.com/kansya-nt/SkyzoMusicBot
 </p>
 
 <h2 align="center">
@@ -35,7 +35,7 @@
                        Contoh
     https://github.com/ridho17-ind/SkyzoMusicBot
     Lalu Kalian Ubah Ke
-    https://github.com/username-github-kalian/SkyzoMusicBot
+    https://github.com/kansya-nt/SkyzoMusicBot
 
 
 </p>
