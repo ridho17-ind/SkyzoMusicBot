@@ -2,7 +2,7 @@
     "name": "Skyzo Music",
     "description": "Music allow you to stream music trought the telegram voice chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/ridho17-ind/SkyzoMusicBot",
+    "repository": "https://github.com/kansya-nt/SkyzoMusicBot",
     "stack": "container",
     "env": {
          "SESSION_NAME": {
@@ -12,47 +12,47 @@
          "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
-            "value": "Isi Id Lu"
+            "value": "6240680769"
          },
          "BOT_IMG": {
             "description": "Photo for your bot",
-            "value": "https://telegra.ph/file/d3f62131358c475dda9ae.jpg",
+            "value": "https://graph.org/file/9de20e410aa63f87ee679.jpg",
             "required": true
          },
          "ASS_ID": {
             "description": "fill with telegram id of account",
             "required": true,
-            "value": "Isi Id Asisten Lu"
+            "value": "6124438726"
          },
          "LOG_GROUP_ID": {
             "description": "create a private group and get the group id, add your bot as admin to the group too",
             "required": true,
-            "value": "Isi Id Log Group Lu Dan Pastikan Bot Dan Asisten Jadi Admin Di Grup Log Lu"
+            "value": "Gabutanajabrow"
          },
          "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
             "required": true,
-            "value": "Isi Pakai Api Id Lu"
+            "value": "20853844"
          },
          "API_HASH": {
             "description": "your Api Hash from my.telegram.org/apps",
             "required": true,
-            "value": "Isi Pakai Api Hash Lu"
+            "value": "89d9b3e7e048c8ccc307659d057ab532"
          },
         "HEROKU_API_KEY": {
-            "description": "Your Heroku account's API key",
+            "description": "ede6d86c-92ef-4be4-b7dc-89ce26bb8404",
             "value": "",
             "required": false
         },
         "HEROKU_APP_NAME": {
-           "description": "Your heroku app/bot's name",
+           "description": "gabutanaja",
            "value": "",
            "required": false
         },
         "SUDO_USERS": {
             "description": "fill with the user id who can access all function in your bot (separate with space).",
             "required": true,
-            "value": "Isi Id Lu Juga Sebagai Sudo User"
+            "value": "6240680769"
         },
         "DURATION_LIMIT": {
             "description": "filled, don't change this !",
@@ -62,16 +62,16 @@
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
-            "value": "Isi Pakai Bot Token"
+            "value": "6946798689:AAFCQ9hkETSi-dqR_i8wB1qsUyqlCJyFyOg"
         },
         "MONGO_DB_URI": {
             "description": "fill with the mongodb url get from mongodb.cloud.com (don't use mine below !)",
             "required": false,
-            "value": "Isi Pakai Mongo Lu"
+            "value": "mongodb+srv://alisa:1234@cluster0.rksvqwe.mongodb.net/?retryWrites=true&w=majority"
         },
         "UPSTREAM_REPO": {
             "description": "If you dont know this, Leave as it is",
-            "value": "https://github.com/ridho17-ind/SkyzoMusicBot",
+            "value": "https://github.com/kansya-nt/SkyzoMusicBot",
             "required": true
         },
         "UPSTREAM_BRANCH": {
@@ -82,12 +82,12 @@
         "CHANNEL": {
             "description": "Fill in using your channel username without @",
             "required": true,
-            "value": "SadRoomsInfo"
+            "value": "gcastdoangya"
         },
         "GROUP": {
             "description": "Fill in using your channel username without the @",
             "required": true,
-            "value": "FlicksRobotSupport"
+            "value": "Gabutanajabrow"
         }
     },
     "buildpacks": [
